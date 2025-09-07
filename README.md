@@ -15,7 +15,7 @@ A modern, responsive web application that converts URLs and text into customizab
 
 ## 🚀 Demo
 
-[Live Demo]([https://aryan-git-byte.github.io/qr-code-generator](https://qrcodegenerator241.netlify.app/))
+[Live Demo](https://qrcodegenerator241.netlify.app/)
 
 ## 🛠️ Technologies Used
 
