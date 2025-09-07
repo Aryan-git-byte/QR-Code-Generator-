@@ -2,8 +2,6 @@
 
 A modern, responsive web application that converts URLs and text into customizable QR codes with color options and download functionality.
 
-![QR Code Generator Preview](https://via.placeholder.com/600x400/667eea/ffffff?text=QR+Code+Generator)
-
 ## ✨ Features
 
 - **🔗 Universal Input**: Convert any URL or text into a QR code
@@ -17,15 +15,7 @@ A modern, responsive web application that converts URLs and text into customizab
 
 ## 🚀 Demo
 
-[Live Demo](https://your-username.github.io/qr-code-generator) *(Replace with your actual GitHub Pages URL)*
-
-## 📸 Screenshots
-
-### Desktop View
-![Desktop View](https://via.placeholder.com/800x500/764ba2/ffffff?text=Desktop+View)
-
-### Mobile View
-![Mobile View](https://via.placeholder.com/300x600/667eea/ffffff?text=Mobile+View)
+[Live Demo](https://aryan-git-byte.github.io/qr-code-generator)
 
 ## 🛠️ Technologies Used
 
@@ -37,10 +27,10 @@ A modern, responsive web application that converts URLs and text into customizab
 
 ## 📦 Installation
 
-### Option 1: Direct Download
+### Quick Start
 1. Clone this repository:
    ```bash
-   git clone https://github.com/your-username/qr-code-generator.git
+   git clone https://github.com/aryan-git-byte/qr-code-generator.git
    ```
 2. Navigate to the project directory:
    ```bash
@@ -48,70 +38,47 @@ A modern, responsive web application that converts URLs and text into customizab
    ```
 3. Open `index.html` in your web browser
 
-### Option 2: GitHub Pages
+### GitHub Pages Deployment
 1. Fork this repository
-2. Go to Settings > Pages
+2. Go to Settings > Pages in your forked repository
 3. Select source as "Deploy from a branch"
 4. Choose "main" branch and "/ (root)" folder
 5. Your site will be available at `https://your-username.github.io/qr-code-generator`
 
-### Option 3: Local Server
-If you prefer running a local server:
-```bash
-# Using Python 3
-python -m http.server 8000
-
-# Using Node.js (with http-server installed globally)
-npx http-server
-
-# Using PHP
-php -S localhost:8000
-```
-
 ## 📱 Usage
 
 1. **Enter Content**: Type any URL or text in the input field
-2. **Choose Colors**: Use the color pickers to customize:
-   - QR Code color (default: black)
-   - Background color (default: white)
+2. **Choose Colors**: Use the color pickers to customize QR code and background colors
 3. **Generate**: Click "Generate QR" button or press Enter
 4. **Download**: Click "Download" to save as PNG image
 
-### Example URLs to Try:
-- `https://github.com`
+### Example Content to Try:
+- `https://github.com/aryan-git-byte`
 - `https://google.com`
+- `Hello World!`
 - `mailto:contact@example.com`
 - `tel:+1234567890`
-- Any text content
 
 ## 🔧 Customization
 
-### Changing Default Colors
-Edit the default values in the HTML:
-```html
-<input type="color" id="foregroundColor" value="#000000" />
-<input type="color" id="backgroundColor" value="#ffffff" />
-```
-
-### Modifying QR Code Size
-Change the size parameter in the JavaScript:
+### Changing QR Code Size
+Modify the size parameter in the JavaScript:
 ```javascript
 const qr = new QRious({
     element: canvas,
     value: link,
-    size: 256, // Change this value
-    // ...
+    size: 256, // Change this value (default: 256px)
+    foreground: foregroundColor,
+    background: backgroundColor,
+    level: 'M'
 });
 ```
 
-### Styling Modifications
-The CSS uses custom properties for easy theming. Main color variables:
-```css
-:root {
-    --primary-gradient: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
-    --background-color: rgba(255, 255, 255, 0.95);
-    --text-color: #333;
-}
+### Custom Color Themes
+Edit default colors in the HTML:
+```html
+<input type="color" id="foregroundColor" value="#000000" />
+<input type="color" id="backgroundColor" value="#ffffff" />
 ```
 
 ## 🌐 Browser Support
@@ -128,8 +95,7 @@ The CSS uses custom properties for easy theming. Main color variables:
 qr-code-generator/
 │
 ├── index.html          # Main HTML file with embedded CSS and JS
-├── README.md           # Project documentation
-└── LICENSE             # License file (optional)
+└── README.md           # Project documentation
 ```
 
 ## 🤝 Contributing
@@ -137,51 +103,43 @@ qr-code-generator/
 Contributions are welcome! Here's how you can help:
 
 1. **Fork** the repository
-2. **Create** a feature branch (`git checkout -b feature/AmazingFeature`)
-3. **Commit** your changes (`git commit -m 'Add some AmazingFeature'`)
-4. **Push** to the branch (`git push origin feature/AmazingFeature`)
+2. **Create** a feature branch (`git checkout -b feature/NewFeature`)
+3. **Commit** your changes (`git commit -m 'Add NewFeature'`)
+4. **Push** to the branch (`git push origin feature/NewFeature`)
 5. **Open** a Pull Request
 
 ### Ideas for Contributions:
-- 📊 Add different QR code error correction levels
+- 📊 Different QR code error correction levels
 - 🎨 More color themes and presets
 - 📱 PWA (Progressive Web App) functionality
 - 🔍 QR code scanner/reader feature
 - 📁 Batch QR code generation
-- 🎭 Different QR code styles and patterns
-- 📈 Analytics and usage tracking
-- 🌍 Internationalization (i18n)
-
-## 🐛 Known Issues
-
-- None currently reported
+- 🎭 Logo embedding in QR codes
+- 🌍 Multiple language support
 
 ## 🔮 Roadmap
 
-- [ ] Add QR code reader/scanner functionality
-- [ ] Implement batch generation for multiple URLs
-- [ ] Add more customization options (logo embedding, rounded corners)
-- [ ] Create mobile app version
-- [ ] Add QR code templates and presets
-- [ ] Implement dark/light theme toggle
+- [ ] QR code reader/scanner functionality
+- [ ] Batch generation for multiple URLs
+- [ ] Logo embedding feature
+- [ ] Dark/light theme toggle
+- [ ] QR code templates and presets
+- [ ] Mobile app version
 
 ## 📜 License
 
-This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
+This project is licensed under the MIT License.
 
 ## 👨‍💻 Author
 
-**Your Name**
-- GitHub: [@your-username](https://github.com/your-username)
-- LinkedIn: [Your LinkedIn](https://linkedin.com/in/your-profile)
-- Twitter: [@your-twitter](https://twitter.com/your-twitter)
+**Aryan**
+- GitHub: [@aryan-git-byte](https://github.com/aryan-git-byte)
 
 ## 🙏 Acknowledgments
 
-- [QRious](https://github.com/neocotic/qrious) - For the excellent QR code generation library
-- [CDNJS](https://cdnjs.com/) - For reliable CDN hosting
-- Color inspiration from modern web design trends
-- Icons and design patterns from contemporary UI/UX practices
+- [QRious](https://github.com/neocotic/qrious) - Excellent QR code generation library
+- [CDNJS](https://cdnjs.com/) - Reliable CDN hosting
+- Modern web design inspiration
 
 ## ⭐ Show Your Support
 
